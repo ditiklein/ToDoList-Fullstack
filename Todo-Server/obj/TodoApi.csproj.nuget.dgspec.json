@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\הגשה שלישית\\Todo-Server\\TodoApi.csproj": {}
+    "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\ToDoLis-FullStack\\Todo-Server\\TodoApi.csproj": {}
   },
   "projects": {
-    "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\הגשה שלישית\\Todo-Server\\TodoApi.csproj": {
+    "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\ToDoLis-FullStack\\Todo-Server\\TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\הגשה שלישית\\Todo-Server\\TodoApi.csproj",
+        "projectUniqueName": "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\ToDoLis-FullStack\\Todo-Server\\TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\הגשה שלישית\\Todo-Server\\TodoApi.csproj",
+        "projectPath": "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\ToDoLis-FullStack\\Todo-Server\\TodoApi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\הגשה שלישית\\Todo-Server\\obj\\",
+        "outputPath": "D:\\Users\\User\\Desktop\\שעורי בית\\שנה ב\\פרקטיקוד\\ToDoLis-FullStack\\Todo-Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

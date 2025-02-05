@@ -1,53 +1,38 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:5080";
+const apiUrl = "http://localhost:5189";
+axios.defaults.baseURL = apiUrl;
+
 axios.interceptors.response.use(
   response => response,
   error => {
-    if (process.env.NODE_ENV === "development") {
-      console.error("Axios Response Error:", error.response ? error.response.data : error.message);
-    }
+    console.error('API Error:', error.response ? error.response.data : error.message);
     return Promise.reject(error);
   }
 );
 
-
 export default {
   getTasks: async () => {
-    try {
-      const result = await axios.get('/tasks');
-      return Array.isArray(result.data) ? result.data : [];  
-    } catch (error) {
-      return [];
-    }
-  },
-  addTask: async (name) => {
-    try {
-      const newTask = { name, isComplete: false };
-      const result = await axios.post('/tasks', newTask, 
-      );
-      return result.data;
-    } catch (error) {
-      return null;
-    }
+    const result = await axios.get('/items');
+    return result.data;
   },
 
-  setCompleted: async (id, isComplete) => {
-    try {
-      const result = await axios.put(`/tasks/${id}`, { id, isComplete }
-      );
-      return result.data;
-    } catch (error) {
-      return null;
-    }
+  addTask: async (name) => {
+    console.log('addTask', name);
+    await axios.post('/items', { name: name, isComplete: false });
+
+  },
+  setCompleted: async (id, isComplete,name) => {
+    await axios.put(`/items/${id}`, {name:name,isComplete: isComplete });
   },
 
   deleteTask: async (id) => {
-    try {
-      await axios.delete(`/tasks/${id}`);
-      return true;
-    } catch (error) {
-      return false;
-    }
+    await axios.delete(`/items/${id}`);
   }
 };
+
+
+
+
+
+
